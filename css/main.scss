@@ -1,0 +1,32 @@
+/* poppins google font */
+
+$main-color: #0ef0d5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #03080a;
+}
+
+@import "container";
+@import "multiple";
+
+.submit {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: $main-color;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}

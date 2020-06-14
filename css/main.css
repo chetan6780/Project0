@@ -1,0 +1,150 @@
+/* poppins google font */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #03080a;
+}
+
+.container {
+  width: 80%;
+  margin: 0px 10px;
+  padding: 20px;
+}
+
+.container h2 {
+  width: 100%;
+  color: #0ef0d5;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .raw100 {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .raw100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .raw100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #0ef0d5;
+}
+
+.container .raw100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .raw100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #0ef0d5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .raw100 .inputBox .textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.container .raw100 .inputBox .textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.container .raw100 .inputBox input,
+.container .raw100 .inputBox .textarea,
+textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.container .raw100 .inputBox input:focus + .text,
+.container .raw100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .raw100 .inputBox input:focus ~ .line,
+.container .raw100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.container .raw100 .inputBox textarea:focus + .text,
+.container .raw100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .raw100 .inputBox textarea:focus ~ .line,
+.container .raw100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.submit {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #0ef0d5;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=main.css.map */
